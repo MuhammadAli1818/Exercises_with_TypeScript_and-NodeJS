@@ -6,26 +6,24 @@ let guest: string[] = ["Waqas", "Mohib", "Faisal"];
 //   console.log("My friend " + guest[i] + " we invite you dinner");
 // }
 
-let absentGuest: string = "Mohib";
-let newGuest: string = "Sharukh";
+console.log(`My friend ${guest[1]} cannot attend the Dinner`);
 
-guest[1] = newGuest;
+guest[1] = "Sharukh";
 
 // for (let i = 0; i < guest.length; i++) {
 //   console.log("My friend " + guest[i] + " we invite you dinner");
 // }
-console.log(`My friend ${absentGuest} cannot attend the Dinner`);
 
 // Q16
-console.log("Good News! We find big table so we are 3 more Guests");
+console.log(`I found a bigger Dinner Table`);
 
-guest.unshift("Sufyan");
-guest.splice(3, 0, "Danyal");
-guest.push("Zeeshan");
+guest.unshift("Okasha");
+guest.splice(2, 0, "Zain");
+guest.push("Ahmad");
 
-for (let i = 0; i < guest.length; i++) {
-  console.log("My friend " + guest[i] + " we invite you dinner");
-}
+// for (let i = 0; i < guest.length; i++) {
+//   console.log("My friend " + guest[i] + " we invite you dinner");
+// }
 
 // Q17
 console.log(
@@ -33,16 +31,18 @@ console.log(
 );
 
 while (guest.length > 2) {
-  let removeGuest = guest.pop();
-  console.log(`Sorry My Friend ${removeGuest}, you are not invited Dinner`);
+  let removedGuest = guest.pop();
+  console.log(`Sorry ${removedGuest} you are not invited`);
 }
 
 for (let i = 0; i < guest.length; i++) {
-  console.log("My friend " + guest[i] + " you are stil invited");
+  console.log("My friend " + guest[i] + " we invite you dinner");
 }
-guest.splice(0, 2);
-console.log(guest);
 
 // Q19 Start
+console.log(guest);
+guest.pop();
+guest.pop();
+
 console.log(`total number of guest Are: ${guest.length}`);
 

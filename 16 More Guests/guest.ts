@@ -3,7 +3,8 @@
 
 // • Add one new guest to the beginning of your array.
 
-// • Add one new guest to the middle of your array. • Use append() to add one new guest to the end of your list. • Print a new set of invitation messages, one for each person in your list.
+// • Add one new guest to the middle of your array.  • Use append() to add one new guest to the end of your list. • Print a new set of invitation messages, one for each person in your list.
+
 
 let guest: string[] = ["Waqas", "Mohib", "Faisal"];
 
@@ -11,23 +12,21 @@ let guest: string[] = ["Waqas", "Mohib", "Faisal"];
 //   console.log("My friend " + guest[i] + " we invite you dinner");
 // }
 
-let absentGuest: string = "Mohib";
-let newGuest: string = "Sharukh";
+console.log(`My friend ${guest[1]} cannot attend the Dinner`);
 
-guest[1] = newGuest;
+guest[1] = "Sharukh";
+
+// for (let i = 0; i < guest.length; i++) {
+//   console.log("My friend " + guest[i] + " we invite you dinner");
+// }
+
+// Q16
+console.log(`I found a bigger Dinner Table`);
+
+guest.unshift("Okasha");
+guest.splice(2, 0, "Zain");
+guest.push("Ahmad");
 
 for (let i = 0; i < guest.length; i++) {
   console.log("My friend " + guest[i] + " we invite you dinner");
 }
-console.log(`My friend ${absentGuest} cannot attend the Dinner`);
-
-// Q16
-console.log("Good News! We find big table so we are 3 more Guests");
-
-guest.unshift("Sufyan");
-guest.splice(3,0,"Danyal");
-guest.push("Zeeshan");
-
-for (let i = 0; i < guest.length; i++) {
-    console.log("My friend " + guest[i] + " we invite you dinner");
-  }

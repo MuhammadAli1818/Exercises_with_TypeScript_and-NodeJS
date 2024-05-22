@@ -3,6 +3,7 @@
 let guest: string[] = ["Waqas", "Mohib", "Faisal"];
 
 for (let i = 0; i < guest.length; i++) {
-   console.log("My friend " + guest[i] + " we invite you dinner");
+  console.log(
+    `Hi ${guest[i]}, I would like to invite you to dinner at my place.`
+  );
 }
-

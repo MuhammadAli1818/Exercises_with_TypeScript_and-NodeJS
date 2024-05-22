@@ -6,12 +6,10 @@ let guest: string[] = ["Waqas", "Mohib", "Faisal"];
 //   console.log("My friend " + guest[i] + " we invite you dinner");
 // }
 
-let absentGuest: string = "Mohib";
-let newGuest: string = "Sharukh";
+console.log(`My friend ${guest[1]} cannot attend the Dinner`);
 
-guest[1] = newGuest;
+guest[1] = "Sharukh";
 
 for (let i = 0; i < guest.length; i++) {
   console.log("My friend " + guest[i] + " we invite you dinner");
 }
-console.log(`My friend ${absentGuest} cannot attend the Dinner`);

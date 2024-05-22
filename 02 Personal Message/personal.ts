@@ -3,4 +3,6 @@
 
 // declare a variable personName and assign it a string value.
 let personName: string = "Eric";
+
+// print a message to that person.
 console.log(`“Hello ${personName}, would you like to learn some Python today?”`);

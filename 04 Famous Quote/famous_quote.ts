@@ -4,6 +4,7 @@
 
 
 let quote: string = "A person who never made a mistake never tried anything new.";
+
 let famousPerson: string = "Albert Einstein";
 
 //  print the quote and the name of its author.

@@ -1,16 +1,13 @@
 //Q3 Name Cases: Store a person’s name in a variable, and then print that person’s name in lowercase, uppercase, and titlecase.
 
+//declare personName variable
 let personName: string = "muhammad ali";
 
-// print name in lowercase, uppercase, and titlecase.
+//print personName in lowercase
+console.log(personName.toLowerCase());
 
-//LowerCase
-console.log("LowerCase: " + personName.toLowerCase());
+//print personName in uppercase
+console.log(personName.toUpperCase());
 
-//UpperCase
-console.log("UpperCase: " + personName.toUpperCase());
-
-//TitleCase
-console.log(
-  "TitleCase: " + personName.replace(/\b\w/g, (c) => c.toUpperCase())
-);
+//print personName in titlecase
+console.log(personName.replace(/\b\w/g, (c) => c.toUpperCase()));
